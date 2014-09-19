@@ -1,0 +1,21 @@
+RewriteEngine On
+RewriteBase / 
+RewriteRule ^page/?(.*) /index.php?page=$1 [QSA]
+<FilesMatch "\.inc$">
+Order allow,deny
+Deny from all
+</FilesMatch>
+<FilesMatch "menuok$">
+Order allow,deny
+Deny from all
+</FilesMatch>
+<FilesMatch "menuer$">
+Order allow,deny
+Deny from all
+</FilesMatch>
+<FilesMatch "\.comments$">
+Order allow,deny
+Deny from all
+</FilesMatch>
+Options -Indexes
+php_value memory_limit 16M

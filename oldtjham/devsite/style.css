@@ -1,0 +1,99 @@
+body {
+	background-color: #d6d6d6;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: center;
+}
+img {
+	border: 0;
+}
+a {
+	color: navy;
+}
+a.menul {
+	text-decoration: none;
+	color: white;
+}
+a.menul:hover {
+	text-decoration: overline;
+	background-color: #86b7ff;
+}
+.sbar {
+background-color: white;
+margin: auto;
+width: 100px;
+text-align: right;
+border: 1px solid gray;
+}
+.paper {
+	background-color: white;
+	margin: auto;
+	width: 640px;
+	text-align: left;
+	border: 1px solid gray;
+}
+.hilt {
+	margin: auto;
+	background-color: #86b7ff;
+	font-size: 14px;
+	text-align: center;
+	width: 480px;
+	padding: 10px;
+}
+.hrule {
+	font-family: Georgia, "Times New Roman", Times, sans-serif;
+	color: gray;
+	font-size: 20px;
+	font-style: italic;
+	border-bottom: 1px dotted black;
+}
+.ht {
+	font-weight: bold;
+	font-size: 16px;
+	font-style: italic;
+}
+.header {
+	background-color: #191970;
+	color: white;
+	font-size: 16px;
+	text-align: right;
+	padding: 5px;
+	border-bottom: 1px solid gray;
+}
+.menu {
+	background-color: #191970;
+	color: white;
+	font-size: 12px;
+	text-align: left;
+/*	padding: 5px;*/
+}
+.menucurr {
+	font-weight: bold;
+}
+.content {
+	padding: 4px;
+	text-align: left;
+	border-bottom: 1px solid gray;
+}
+.title {
+	font-weight: bold;
+	font-size: 20px;
+	text-align: right;
+/*	border-bottom: 1px solid gray;*/
+}
+.copy {
+	padding: 4px;
+	font-size: 8px;
+	font-weight: bold;
+	text-align: right;
+/*	border-bottom: 1px solid gray; */
+}
+.badges {
+text-align: center;
+}
+/* .footer {
+	margin-top: 2px;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+} */
