@@ -16,3 +16,12 @@ body {
       border-radius: 2px;
       padding: 10px;
     }
+  .namecard {
+      background: white;
+      width: 25%;
+      height: auto;
+      position: relative;
+      margin: auto;
+      border-radius: 2px;
+      padding: 10px;
+    }
