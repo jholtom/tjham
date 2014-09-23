@@ -24,4 +24,17 @@ body {
       margin: auto;
       border-radius: 2px;
       padding: 10px;
+      float: right;
+      right: 12%;
+    }
+  .photocard {
+      background: white;
+      width: 45%;
+      height: auto;
+      position: relative;
+      margin: auto;
+      border-radius: 2px;
+      padding: 10px;
+      float: left;
+      left: 12%;
     }
