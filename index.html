@@ -13,6 +13,7 @@
         <link rel="import" href="bower_components/core-scaffold/core-scaffold.html">
         <link rel="import" href="bower_components/paper-shadow/paper-shadow.html">
         <link rel="import" href="bower_components/core-menu/core-submenu.html">
+        <link rel="import" href="bower_components/core-pages/core-pages.html">
     </head>
     <body unresolved>
         <core-scaffold>
@@ -21,8 +22,8 @@
                     <span>Navigation</span>
                 </core-toolbar>
                 <core-menu selected"0">
-                    <core-item icon="home" label="Home"></core-item>
-                    <core-item icon="accessibility" label="Members"></core-item>
+                    <core-item icon="home" label="Home" id="homelink"></core-item>
+                    <core-item icon="accessibility" label="Members" id="memberlink"></core-item>
                     <core-submenu icon="link" label="Links">
                         <core-item label="Link 1"></core-item>
                         <core-item label="Link 2"></core-item>
@@ -31,29 +32,92 @@
                 </core-menu>
             </core-header-panel>
             <span tool>Thomas Jefferson Amateur Radio Club</span>
-            <div class="content">
-                <div class="card">
-                    <paper-shadow z="3"></paper-shadow>
-                    As amateur radio operators, we can talk to fellow "hams" around the world using HF frequencies similar to those that AM radio uses.&nbsp;&nbsp;We also learn about radio propagation, antennas, solar cycles, and electronics. Another key part of amateur radio is service. Hams often assist in events, such as the Marine Corps Marathon, providing communications for the events. Amateur operators also provide backup communications when other forms of communication, such as phones and cell phones, are disabled.
+            <core-pages selected="0">
+                <div id="home" class="content">
+                    <div class="card">
+                        <paper-shadow z="3"></paper-shadow>
+                        As amateur radio operators, we can talk to fellow "hams" around the world using HF frequencies similar to those that AM radio uses.&nbsp;&nbsp;We also learn about radio propagation, antennas, solar cycles, and electronics. Another key part of amateur radio is service. Hams often assist in events, such as the Marine Corps Marathon, providing communications for the events. Amateur operators also provide backup communications when other forms of communication, such as phones and cell phones, are disabled.
+                    </div>
+                    <br /><br />
+                    <div class="card">
+                        <paper-shadow z="3"></paper-shadow>
+                        Our club meets Wednesday A blocks. Ms. Wu sponsors the Hamradio Club. The Elmers of the club (veteran hams that teach young hams) are Arthur Feller and John Transue.
+                    </div>
+                    <br /><br />
+                    <div class="namecard">
+                        <paper-shadow z="3"></paper-shadow>
+                        Welcome to the website of TJHSST's Amateur Radio Club. Please send any questions, comments, or
+                        suggestions to me at <a href="mailto:jacob@holtom.me">jacob@holtom.me</a>. Enjoy!
+                        <br />
+                        <h5><i>Jacob Holtom</i></h4>
+                    </div>
+                    <div class="photocard">
+                         <paper-shadow z="3"></paper-shadow>
+                         PICTURES GO HERE
+
+                    </div>
                 </div>
-                <br /><br />
-                <div class="card">
-                    <paper-shadow z="3"></paper-shadow>
-                    Our club meets Wednesday A blocks. Ms. Wu sponsors the Hamradio Club. The Elmers of the club (veteran hams that teach young hams) are Arthur Feller and John Transue.
+                <div id="members" class="content">
+                    <div class="card">
+                        <paper-shadow z="3"></paper-shadow>
+<a href="http://www.viennawireless.org/">VWS Elmers </a>
+<hr>
+<a href="mailto:afeller@ieee.org">Art Feller</a>, W4ART - 703-627-7388  <br>
+<a href="mailto:jtransue@cox.net">John Transue</a>, AF4PD &ndash; 703-534-5902<br>
+Student Members
+<hr>
+Jacob Holtom - KF5WPA<br>
+Michael Smith<br>
+David Rogers<br>
+Anya Owsenek<br>
+More people I don't actually know
+<br>
+Alumni Members
+<hr>
+Caroline Crockett, KJ4JHA (2011) <br>
+Christopher Reffett, KJ4ALG (2011)<br />
+Peter Town (2012)<br />
+Victor Youk (2011)<br />
+Sam Prestwood, KI4COD (2012)<br />
+Karina Hemmendinger (2013)<br />
+Daniel Johnson KI4POU (2010)<br>
+Joseph Hallahan KI4YNG (2010)<br>
+  Alan Bosch, KO4ALA (Elmer) <br />
+  Mary Linnell, K1MIT (2009) <br />
+  Meghan Nelson, KI4THG (2009) <br />
+  Filip Sufitchi, KI4QNK (2009) <br />
+  Phillip Marlow, KI4PRI (2009)<br />
+  Will McGrath, KI4IPW (2008)<br />
+  Martin Elthon, KJ4BVF (2008)<br />
+  Michael Lowman (2008)<br />
+  Drew Stebbins, KI4OBS (2008)<br />
+  Chris Atwood (2008)<br />
+  Jack Breese, KI4OWL (2008)<br />
+  Nathan Watson, N1TCP (2008)<br />
+  Lee Burton, N6UDP (2007)<br />
+  Esther Li, KI4LJD (2007)<br />
+  Robert Moffatt, KG4UHM (2005)<br />
+  Jesse Warlick, KG4TVR (2005)<br />
+  Alice Ohlson (2005)<br />
+  Ben Gelb, KF4KJQ (2004)<br />
+  Ryan Comes, KF4YKD (2004?)<br />
+  Brian Myhre, KG4DMM (2002)<br />
+  Navdeep Singh, KG4MCK (2002)<br />
+  Michael Coblenz, KG4CVO (2001)<br />
+</div>
+                    </div>
                 </div>
-                <br /><br />
-                <div class="namecard">
-                    <paper-shadow z="3"></paper-shadow>
-                    Welcome to the website of TJHSST's Amateur Radio Club. Please send any questions, comments, or
-                    suggestions to me at <a href="mailto:jacob@holtom.me">jacob@holtom.me</a>. Enjoy!
-                    <br />
-                    <h5><i>Jacob Holtom</i></h4>
-                </div>
-                <div class="photocard">
-                     <paper-shadow z="3"></paper-shadow>
-                     PICTURES GO HERE
-                </div>
-            </div>
+            </core-pages>
         </core-scaffold>
+    <script>
+      document.querySelector("#memberlink").addEventListener('click', function(e) {
+        var pages = document.querySelector('core-pages');
+        pages.selected = 1;
+      });
+      document.querySelector("#homelink").addEventListener('click', function(e) {
+        var pages = document.querySelector('core-pages');
+        pages.selected = 0;
+      });
+    </script>
     </body>
 </html>
