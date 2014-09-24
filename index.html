@@ -127,20 +127,18 @@
             </core-pages>
         </core-scaffold>
     <script>
-      //Ghetto jQuery
-      function $(sel){return document.querySelectorAll(sel);}
       //Selectors for Sidebar Nav
-      $("#memberlink").addEventListener('click', function(e) {
-        var pages = $('#core-pages');
+      document.querySelector("#memberlink").addEventListener('click', function(e) {
+        var pages = document.querySelector('#core-pages');
         pages.selected = 1;
       });
-      $("#homelink").addEventListener('click', function(e) {
-        var pages = $('#core-pages');
+      document.querySelector("#homelink").addEventListener('click', function(e) {
+        var pages = document.querySelector('#core-pages');
         pages.selected = 0;
       });
       //Selector for Gallery
-      $("#gallerycard").addEventListener('click', function(e) {
-        var pages = $('#gallery');
+      document.querySelector("#gallerycard").addEventListener('click', function(e) {
+        var pages = document.querySelector('#gallery');
         pages.selected = (pages.selected + 1) % pages.children.length;
       });
     </script>
