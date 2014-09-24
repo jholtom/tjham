@@ -38,3 +38,6 @@ body {
       float: left;
       left: 12%;
     }
+    .scaled {
+        max-width: 100%;
+    }
