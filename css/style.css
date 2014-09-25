@@ -41,5 +41,6 @@ body {
       min-height: 500px;
     }
     .scaled {
-        max-width: 100%;
+        width: 100%;
+        /*max-width: 100%;*/
     }
