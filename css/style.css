@@ -38,9 +38,8 @@ body {
       float: left;
       left: 12%;
       overflow: hidden;
-      min-height: 500px;
+      min-height: 600px;
     }
     .scaled {
         width: 100%;
-        /*max-width: 100%;*/
     }
