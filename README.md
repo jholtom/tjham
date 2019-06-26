@@ -1,3 +1,4 @@
-tjham
+TJHSST HAM Website
 =====
-Repo for TJHAM and its new website
+Archive of website and new website as done by Jacob Holtom
+Repository for historical purposes
